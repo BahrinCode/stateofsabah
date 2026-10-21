@@ -8,6 +8,7 @@ import {Footer} from "@/components/layout/Footer";
 const newsreader = Newsreader({
   subsets: ["latin"],
   variable: "--font-serif",
+  weight: ["400", "500", "600", "700"], // Added explicit weights
   style: ["normal", "italic"],
 });
 
