@@ -189,9 +189,9 @@ STORIES_DATA["grocery-cost-nabawan-vs-kk"] = STORIES_DATA["grocery-bill-geograph
 export default async function StoryDetailPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 }) {
-  const { slug } = await params;
+  const { slug } = params;
   const story = STORIES_DATA[slug.toLowerCase()];
 
   if (!story) {
